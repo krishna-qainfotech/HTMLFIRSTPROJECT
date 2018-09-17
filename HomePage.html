@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pika Gaming Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+      function myFunction() {
+          var txt;
+          var person = prompt("Please enter your name:", "");
+          if (person == null || person == "") {
+              txt = "User cancelled the prompt.";
+          } else {
+              txt = "Hello " + person + "! How are you today?";
+          }
+          if(person=="krishna"||person=="Krishna"){
+            var password = prompt("Please enter password", "");
+          }
+          if(password=="krishna"||password=="Krishna"){
+            alert("Welcome Back Krishna");
+          }
+         // document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+  <!--To arrange image Horizontally-->
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 500px) {
+        .column {
+            width: 100%;
+        }
+    }
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+  </style>
+  <style>
+    .carousel-content {
+  position: absolute;
+  bottom: 40%;
+  left: 35%;
+  z-index: 50;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+  </style>
+    <!--Style tag for Video in the CarouselSlider-->
+    <style>
+      video {
+          max-width: 100%;
+          height: auto;
+      }
+      </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <a class="navbar-brand" href="#"><img src="pikachu.png" class="rounded-circle" alt="Pikachu Picture" width="30" height="30"></a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#carouselslide"><h3><span class="badge badge-secondary">PikaEngine</span></h3></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jumbotron">
+                  <h3>
+                  <span class="badge badge-secondary">2D Games</span>
+                </h3>
+              </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#video">
+                    <h3>
+                    <span class="badge badge-secondary">Create Fun Games</span>
+                  </h3>
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#MakeYouStories">
+                      <h3>
+                      <span class="badge badge-secondary">Make Your Own Stories</span>
+                    </h3>
+                  </a>
+                  </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PlatFormSupported">
+                          <h3>
+                          <span class="badge badge-secondary">Platform Supported</span>
+                        </h3>
+                      </a>
+                      </li
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <h3>
+                            <span class="badge badge-secondary">
+                                <button onclick="myFunction()">SignIn
+                                </button></span>
+                          </h3>
+                        </a>
+                        </li
+            </ul>
+          </nav>
+
+
+
+
+<div id="carouselslide" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="4.jpg" alt="Assasin game" width=100% height=60%>
+      <div class="carousel-content">
+          <h1>Get Read, it's Time to Play</h1>
+          <h2>You haven't seen nothing like this...</h2>
+        </div>
+        <div class="carousel-caption">
+          <h3>scroll Down</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="CS go game" width=100% height=60%>
+      <div class="carousel-content">
+          <h1>Get Read, it's Time to Play</h1>
+          <h2>You haven't seen nothing like this...</h2>
+        </div>
+      <div class="carousel-caption">
+          <h3>Scroll Down</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-content">
+            <h1>Get Read, it's Time to Play</h1>
+            <h2>You haven't seen nothing like this...</h2>
+          </div>
+      <img src="2.jpg" alt="God of war game" width=100% height=60%>
+      <div class="carousel-caption">
+          <h3>Scroll Down</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="1.jpg" alt="Price of Persia" width=100% height=60%>
+      <div class="carousel-content">
+          <h1>Get Read, it's Time to Play</h1>
+          <h2>You haven't seen nothing like this...</h2>
+        </div>
+      <div class="carousel-caption">
+          <h3>Scroll Down</h3>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev" alt="left Button to scroll images horizontally">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next" alt="Right Button to scroll images horizontally">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!--Second Link for navigation-->
+<div class="jumbotron jumbotron-fluid" id="jumbotron">
+  <div class="container">
+      <img src="Circle1.jpg" class="rounded-circle" alt="2D car Racing game" width="304" height="236">
+      <img src="Circle2.jpg" class="rounded-circle" alt="Pac man Game" width="304" height="236">
+      <img src="Circle3.jpeg" class="rounded-circle" alt="Super luck's tail" width="304" height="236">
+      <center><h1>Witness the change you never seen Before</h1> </center> 
+   
+  </div>
+</div>
+
+<!--Thrid Link for navigation-->
+<div id="video">
+<video width=100% controls>
+    <source src="Titan.mp4" type="video/mp4" alt="This video show case the power of Pika engine By which developer can Make Game interactive">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<!--Fouth Link for navigation-->
+<div class="jumbotron jumbotron-fluid" id="MakeYouStories">
+    <img src="2Dgame.jpg" class="img-thumbnail" alt="Chibi Character Boy and girl Fighting" width="304" height="236"> 
+    <img src="2Dgame1.jpg" class="img-thumbnail" alt="Chibi Child Wearing Different Dress" width="304" height="236"> 
+    <img src="2Dgame2.jpg" class="img-thumbnail" alt="Happy new Year 2019" width="304" height="236"> 
+    <img src="2Dgame3.jpg" class="img-thumbnail" alt="Chibi bady Doing Math calculation" width="304" height="236"> 
+</div>
+<!--Fifth Link for navigation-->
+<div class="jumbotron jumbotron-fluid" id="PlatFormSupported">
+   <!-- <div class="row">
+        <div class="col-sm-3" style="background-color:lavender;">  
+    <div class="card" style="width:100%">
+    <img class="card-img-top" src="Android.jpg" alt="AndroidPlatform" style="width:100%" height="100px" width="100px">
+    <div class="card-body">
+        <center><h2 class="card-title">Android</h2></center>
+    </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="background-color:lavender;">
+    <div class="card" style="width:100%">
+        <img class="card-img-top" src="tizen.jpg" alt="Tizen" style="width:100%" height="100px" width="100px" >
+        <div class="card-body">
+            <center><h2 class="card-title">Tizen</h2></center>
+        </div>
+        </div>
+       
+        <div class="col-sm-3" style="background-color:lavender;">
+        <div class="card" style="width:100%">
+            <img class="card-img-top" src="windows.jpg" alt="Windows" style="width:100%" height="100px" width="100px">
+            <div class="card-body">
+                <center><h2 class="card-title">Windows</h2></center>
+            </div>
+            </div>
+            
+  
+  <div class="col-sm-3" style="background-color:lavender;">
+            <div class="card" style="width:100%">
+                <img class="card-img-top" src="Mac.png" alt="Mac OS" style="width:100%" height="100px" width="100px">
+                <div class="card-body">
+                    <center><h2 class="card-title">Mac</h2></center>
+                </div>
+                </div>
+
+<div class="col-sm-3" style="background-color:lavender;">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="blackberry.jpg" alt="BlackBerry" style="width:100%" height="100px" width="100px">
+                    <div class="card-body">
+                        <center><h2 class="card-title">BlackBerry</h2></center>
+                    </div>
+                    </div>
+
+<div class="col-sm-3" style="background-color:lavender;">                    
+<div class="card" style="width:100%">
+                        <img class="card-img-top" src="linux.jpg" alt="Linux" style="width:100%" height="100px" width="100px">
+                        <div class="card-body">
+                            <center><h2 class="card-title">Linux</h2></center>
+                        </div>
+                        </div>
+                
+</div>-->
+<div class="row">
+  <div class="column">
+    <img src="Android.jpg" alt="Android" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Mac.png" alt="Mac os" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="blackberry.jpg" alt="BlackBerry os" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="linux.jpg" alt="Linux os" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="tizen.jpg" alt="tizen os" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="windows.jpg" alt="windows os" style="width:100%">
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
